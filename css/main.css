@@ -467,10 +467,14 @@ img {
   from {
     opacity: 0;
     margin-bottom: -100px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
     opacity: 1;
     margin-bottom: 0px;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -478,16 +482,22 @@ img {
   from {
     opacity: 0;
     margin-bottom: -100px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
     opacity: 1;
     margin-bottom: 0px;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 .animate {
   -webkit-animation-name: move;
           animation-name: move;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
 }

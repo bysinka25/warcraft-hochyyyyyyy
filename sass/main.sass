@@ -333,14 +333,18 @@ img
 
 @keyframes move 
   from
-   opacity: 0
-   margin-bottom: -100px
-
+    opacity: 0
+    margin-bottom: -100px
+    transform: rotate(0deg)
+  
   to
    opacity: 1
-   margin-bottom: 0px 
+   margin-bottom: 0px
+   transform: rotate(360deg)
+
 .animate
   animation-name: move
+  transition-delay: 0.4s
   animation-duration: 1s
 
   
