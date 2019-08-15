@@ -466,30 +466,26 @@ img {
 @-webkit-keyframes move {
   from {
     opacity: 0;
-    margin-bottom: -100px;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: translateY(100%) rotate(90deg);
+            transform: translateY(100%) rotate(90deg);
   }
   to {
     opacity: 1;
-    margin-bottom: 0px;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: translateY(0%) rotate(0deg);
+            transform: translateY(0%) rotate(0deg);
   }
 }
 
 @keyframes move {
   from {
     opacity: 0;
-    margin-bottom: -100px;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: translateY(100%) rotate(90deg);
+            transform: translateY(100%) rotate(90deg);
   }
   to {
     opacity: 1;
-    margin-bottom: 0px;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: translateY(0%) rotate(0deg);
+            transform: translateY(0%) rotate(0deg);
   }
 }
 
