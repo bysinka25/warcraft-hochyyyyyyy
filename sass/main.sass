@@ -271,15 +271,19 @@ img
     &__button
       margin-right: 7px
 .production-slider_top
-  padding-bottom: 13px
+  margin-bottom: 13px
+  height: 377px
+  overflow-y: hidden
 .production
   padding: 
    top: 87px
    bottom: 90px
   &-slider
     &_bottom
-      padding-left: 17px
-      padding-right: 17px
+      padding-left: 21px
+      padding-right: 21px
+      height: 78px
+      overflow-y: hidden
       img
         margin: 0 6px
     
@@ -291,12 +295,18 @@ img
   height: 100%
   width: 22px
   border: 1px solid $active-color
-.slider-arrow__right
-      right: 0
-      background: #fff url(../img/arrow-right.png) center no-repeat
-.slider-arrow__left
-      background: #fff url(../img/arrow.png) center no-repeat
-      left: 0
+  &:hover
+    cursor: pointer
+  &__right
+    right: 0
+    background: #fff url(../img/arrow-right.png) center no-repeat
+    &:hover
+      background: $active-color url(../img/arrow-right_active.png)  center no-repeat
+  &__left
+    background: #fff url(../img/arrow.png) center no-repeat
+    left: 0
+    &:hover
+      background: $active-color url(../img/arrow-left_active.png)   center no-repeat
 
     
       
