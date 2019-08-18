@@ -413,6 +413,27 @@ img {
   overflow-y: hidden;
 }
 
+.production-text {
+  width: 420px;
+}
+
+.production-text__title {
+  background-color: #ff9d00;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.production-text__descr {
+  color: #373737;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 .slider-arrow {
   position: absolute;
   top: 0;
