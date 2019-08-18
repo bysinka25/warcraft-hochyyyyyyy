@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="bootsrap4/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
@@ -302,6 +304,48 @@
     <!-- /.container -->
   </section>
   <!-- /.products -->
+  <section class="production">
+    <div class="container">
+      <div class="row">
+        <div class="col-7">
+          <div class="production-slider_top">
+            <img src="img/room1.png" alt="Производство">
+            <img src="img/room1.png" alt="Производство">
+            <img src="img/room1.png" alt="Производство">
+            <img src="img/room1.png" alt="Производство">
+            <img src="img/room1.png" alt="Производство">
+            <img src="img/room1.png" alt="Производство">
+          </div>
+          <div class="production-slider_bottom">
+            <img src="img/room1.png" alt="Производство">
+            <img src="img/room1.png" alt="Производство">
+            <img src="img/room1.png" alt="Производство">
+            <img src="img/room1.png" alt="Производство">
+            <img src="img/room1.png" alt="Производство">
+            <img src="img/room1.png" alt="Производство">
+          </div>
+        </div>
+        <!-- /.col-7 -->
+        <div class="col-5">
+          <div class="production-text">
+            <div class="production-text__title">Производство</div>
+            <!-- /.production-text__title -->
+            <div class="production-text__descr">Современное оборудование позволяет произ- водить до 5 миллионов
+              квадратных метров гофрокартона ежемесячно. Гофрокороба и лотки производятся по ГОСТу или чертежам
+              заказчика.
+              Досконально прорабатываем конструкции коро- бов и составы сырья, учитывая условия хранения,
+              транспортировки и производства вашей продукции.
+              Возможно нанесение цветной флексопечати на поверхность коробов.</div>
+            <!-- /.production-text__descr -->
+          </div>
+          <!-- /.production-text -->
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.products -->
 
 
 
@@ -351,7 +395,27 @@
       });
     });
   </script>
+  <script src="slick/slick.min.js"></script>
+  <script>
+  $('.production-slider_top').slick({
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.production-slider_bottom'
+  });
+  $('.production-slider_bottom').slick({
+    arrows: true, 
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: '<div class="slider-arrow slider-arrow__left"></div>',
+    nextArrow: '<div class="slider-arrow slider-arrow__right"></div>',
+    asNavFor: '.production-slider_top',
+  });
+  </script>
   <script src="js/wow.min.js"></script>
+ 
+				
+
   <script>
     new WOW().init();
   </script>
