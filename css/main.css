@@ -417,7 +417,7 @@ img {
 }
 
 .production-text {
-  width: 420px;
+  width: 390px;
 }
 
 .production-text__title {
@@ -570,6 +570,17 @@ img {
   .features-block__descr {
     font-size: 17px;
   }
+  .production-text {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .production-text__title {
+    padding-right: 30px;
+  }
+  .feedback-slider {
+    width: 305px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -631,6 +642,11 @@ img {
   }
   .features-block__img {
     vertical-align: top;
+  }
+  .production-text {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
