@@ -445,8 +445,9 @@
       slidesToShow: 1,
       slidesToScroll: 1,
       asNavFor: '.production-slider_bottom'
+      
     });
-    $('.production-slider_bottom').slick({
+    $('.production-slider_bottom ').slick({
       arrows: true,
       slidesToShow: 4,
       slidesToScroll: 1,
@@ -460,6 +461,18 @@
       slidesToScroll: 1,
       prevArrow:'<div class="slider-arrow slider-arrow__left"></div>',
       nextArrow:'<div class="slider-arrow slider-arrow__right"></div>',
+      responsive:[
+        {
+          breakpoint: 480,
+          settings: {
+          slidesToScroll: 1,
+          slidesToShow: 1,
+          arrows: true,
+          }
+
+        },
+      ]
+      
     });
   </script>
   <script src="js/wow.min.js"></script>
