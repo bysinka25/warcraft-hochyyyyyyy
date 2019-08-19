@@ -256,7 +256,7 @@ img
       background: url(../img/wavy.png) center no-repeat
       height: 6px
 .products-block__img
-  height: 280px
+
   margin-bottom: 19px
 .products
   padding-top: 57px
@@ -270,6 +270,8 @@ img
       margin-bottom: 28px
     &__button
       margin-right: 7px
+    &__img
+      height: 260px
 
 .production
   padding: 
@@ -395,6 +397,66 @@ img
       margin-left: auto
       margin-right: auto
       margin-bottom: 10px
+  .numbers-block
+    width: 100%
+    display: block
+    text-align: center
+    margin: auto
+  .features-blocks
+    width: 100%
+    display: block
+    padding-bottom: 40px
+  .features-block
+    &__title
+      font-size: 17px
+    &__descr
+      font-size: 17px
+@media (min-width: 576px ) and (max-width: 768px)
+  .header-contacts__phones
+    flex-direction: column
+  .button
+    display: inline-block
+    padding: 12px
+  .button__big
+    padding: 18px 29px
+  .hidden-mobile
+    display: none
+  .header
+    &-logo
+      background: url(../img/mobile.png) center no-repeat
+      width: 35px
+      height: 35px
+      background-color: $active-color
+      border-radius: 4px
+    &-contacts
+      &__phone
+        font-size: 14px
+        margin-right: 0
+        border: none
+        &:first-child
+          border-right: none
+  .main
+    &-text
+      &__title
+        text-align: center
+      &__subtitle
+        text-align: center
+      &__form
+        margin-left: auto
+        margin-right: auto
+        text-align: center
+  .form-title
+    padding: 0 
+  .form__input
+    margin-left: 25px
+  .numbers-block
+    width: 100%
+  .features-block
+    flex-basis: 47%
+    text-align: top
+    &__img
+      vertical-align: top
+
 
 @keyframes move 
   from
